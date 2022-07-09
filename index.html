@@ -4,6 +4,9 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
         <title>Kimlong Nguyen</title>
     </head>
     <body>
@@ -11,13 +14,13 @@
             <nav id="navbar">
                 <ul id="nav-list">
                     <li>
-                        <a class="nav-link" href="#About">About</a>
+                        <a class="link" href="#About">About</a>
                     </li>
                     <li>
-                        <a class="nav-link" href="#work">Work</a>
+                        <a class="link" href="#work">Work</a>
                     </li>
                     <li>
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -29,31 +32,63 @@
                 </div>
             </section>
 
-            <section id="work">
+            <section class="section-container" id="work">
                 <div class="header-container">
-                    <h2 class="section-header">Some of my projects</h2>
+                    <h2 class="section-header">Projects</h2>
                 </div>
                 <div class="project-container">
                     <a class="project" href="https://kimlong0.github.io/demo-landing-page/" target="_blank">
                         <div class="image-container">
-                            <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" alt="project">
+                            <img class="project-image" src="assets/original-trombones.jpg" alt="project">
                         </div>
                         <div class="project-title-div">
                             <h3 class="project-title">Original Trombones</h3>
                         </div>
-                        <p class="project-description">Landing Page</p>
+                        <p class="project-description">Demo Landing Page</p>
                     </a>
-                    <a href="" class="project"></a>
-                    <a href="" class="project"></a>
-                    <a href="" class="project"></a>
-                    <a href="" class="project"></a>
-                    <a href="" class="project"></a>
+                    <a class="project" href="https://matthewchung.shinyapps.io/final-project/" target="_blank">
+                        <div class="image-container">
+                            <img class="project-image" src="assets/gender.JPG" alt="project">
+                        </div>
+                        <div class="project-title-div">
+                            <h3 class="project-title">Gender Wage Gap 2015</h3>
+                        </div>
+                        <p class="project-description">Data Analysis</p>
+                    </a>
+                    <a class="project" href="https://info-201a-sp22.github.io/a3-incarceration-kimlong0/" target="_blank">
+                        <div class="image-container">
+                            <img class="project-image" src="assets/incarceration.JPG" alt="project">
+                        </div>
+                        <div class="project-title-div">
+                            <h3 class="project-title">Incarceration Rates</h3>
+                        </div>
+                        <p class="project-description">Data Analysis</p>
+                    </a>
+                    <a class="project" href="https://kimlong0.shinyapps.io/a4-climage-change-kimlong0/" target="_blank">
+                        <div class="image-container">
+                            <img class="project-image" src="assets/co2-emission.JPG" alt="project">
+                        </div>
+                        <div class="project-title-div">
+                            <h3 class="project-title">CO2 Emissions</h3>
+                        </div>
+                        <p class="project-description">Data Analysis</p>
+                    </a>
                 </div>
             </section>
 
-            <!-- <section id="work2">
-                <h2 class="section-header">Some of my projects</h2>
-            </section> -->
+            <section class="section-container" id="contact">
+                <div class="header-container">
+                    <h2 class="section-header">Say Hi!</h2>
+                </div>
+
+                <div class="contact-container">
+                    <button class="button-27">EMAIL ME →</button>
+                    <div class="link-containers">
+                        <a class="link" href="https://www.linkedin.com/in/kimlong-nguyen/" target="_blank">Linkedln</a>
+                        <a class="link" href="https://github.com/kimlong0" target="_blank">Github</a>
+                    </div>
+                </div>
+            </section>
         </main>
     </body>
 </html>
