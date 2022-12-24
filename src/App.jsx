@@ -1,10 +1,11 @@
 import Navbar from "./Navbar"
+import Intro from "./Intro"
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <img src="images/paint-explosion.png"></img>
+      <Intro />
     </div>
   )
 }
