@@ -7,7 +7,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "light-gray": '#F4F2EE'
+        'gray-theme': '#F4F2EE',
+        'orange-theme': '#FD8E58',
+        'cyan-theme': '#7FD1AE'
       }
     },
   },
