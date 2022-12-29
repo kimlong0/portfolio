@@ -1,9 +1,9 @@
 import Navbar from "./Navbar"
 import Intro from "./Intro"
 
-function ProjectCard() {
+function ProjectCard(props) {
   return (
-    <div className="w-full h-96 bg-gray-300 rounded-3xl">
+    <div className="w-4/5 h-96 bg-gray-300 rounded-4xl">
 
     </div>
   )
@@ -12,7 +12,7 @@ function ProjectCard() {
 function Projects() {
 
   return (
-    <div className="h-80 py-8 px-9">
+    <div className="py-8 px-9 flex flex-col items-center">
       <h2 className="text-2xl pb-8 font-bold bg-gradient-to-r from-[#7f87ff] to-[#ec3d43] bg-clip-text text-transparent">Some of my Projects</h2>
       <ProjectCard />
     </div>
