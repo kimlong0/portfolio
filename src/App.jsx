@@ -1,20 +1,27 @@
+import { useEffect, useState } from "react"
 import Navbar from "./Navbar"
 import Intro from "./Intro"
 
 function ProjectCard(props) {
+  const project = props.project;
+  console.log(project);
   return (
     <div className="w-4/5 h-96 bg-gray-300 rounded-4xl">
-
+      <div>
+        <img src={`/images${project.img}`}></img>
+      </div>
     </div>
   )
 }
 
-function Projects() {
+function Projects(props) {
+  const projects = props.projects;
+  const projectList = projects.map((project) => <ProjectCard key={project.name} project={project}/>)
 
   return (
     <div className="py-8 px-9 flex flex-col items-center">
       <h2 className="text-2xl pb-8 font-bold bg-gradient-to-r from-[#7f87ff] to-[#ec3d43] bg-clip-text text-transparent">Some of my Projects</h2>
-      <ProjectCard />
+      {projectList}
     </div>
   )
 }
@@ -36,12 +43,26 @@ function About() {
 }
 
 function App() {
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    fetch('/data/projects.json').catch((error) => {
+      console.log(error);
+    })
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      setProjects(data);
+    })
+  }, []);
+
   return (
     <div className="App">
       <Navbar />
       <Intro />
       <About />
-      <Projects />
+      <Projects projects={projects}/>
     </div>
   )
 }
