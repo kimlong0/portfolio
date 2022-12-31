@@ -6,9 +6,11 @@ function ProjectCard(props) {
   const project = props.project;
   console.log(project);
   return (
-    <div className="w-4/5 h-96 bg-gray-300 rounded-4xl">
+    <div className="flex flex-col items-center w-4/5 h-96 p-12 bg-gray-300 rounded-4xl">
+      <img src={`/images${project.img}`} className="h-80 w-72 object-cover rounded-3xl"></img>
       <div>
-        <img src={`/images${project.img}`}></img>
+        <h3 className="text-2xl font-bold">Discover PNW</h3>
+        <a href={project.link}>WEBSITE</a>
       </div>
     </div>
   )
@@ -37,7 +39,7 @@ function About() {
           <p className="text-2xl font-bold text-transparent">Learning is my passion</p>
         </div>
       </div>
-      <img src="images/Profile-Pic.jpg" className="h-48 w-48 my-8 rounded-full object-cover"></img>
+      <img src="images/Profile-Pic.jpg" className="shrink-0 h-48 w-48 my-8 rounded-full object-cover"></img>
     </div>
   )
 }
