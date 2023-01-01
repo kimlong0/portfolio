@@ -3,6 +3,8 @@
         "name": "Discover PNW",
         "img": "/discover.png",
         "link": "https://discover-pnw.web.app/discover",
-        "category": "Travel"
+        "source-code": "https://github.com/kimlong0/Discover-PNW",
+        "category": "Travel",
+        "tools": ["react", "tailwindcss", "firebase"]
     }
 ]
