@@ -6,11 +6,13 @@ function ProjectCard(props) {
   const project = props.project;
   console.log(project);
   return (
-    <div className="flex flex-col items-center w-4/5 h-96 p-12 bg-gray-300 rounded-4xl">
-      <img src={`/images${project.img}`} className="h-80 w-72 object-cover rounded-3xl"></img>
-      <div>
-        <h3 className="text-2xl font-bold">Discover PNW</h3>
-        <a href={project.link}>WEBSITE</a>
+    <div className="flex flex-col md:flex-row items-center w-4/5 h-128 p-6 md:p-16 max-w-screen-md bg-gray-200 rounded-4xl">
+      <a href={project.link} target="_blank" className="shrink-0">
+        <img src={`/images${project.img}`} className="h-72 w-72 md:h-96 md:w-80 object-cover rounded-3xl"></img>
+      </a>
+      <div className="flex flex-col self-start md:ml-10">
+        <h3 className="text-2xl font-bold py-6">Discover PNW</h3>
+        <a href={project.link} target="_blank">WEBSITE</a>
       </div>
     </div>
   )
