@@ -5,7 +5,7 @@ import ProjectsList from "./components/ProjectsList"
 
 function About() {
   return (
-    <div className="h-1/2 flex flex-col md:flex-row justify-between items-center py-8 px-9 bg-black" id="About">
+    <div className="h-1/2 flex flex-col sm:flex-row justify-around items-center py-8 px-9 bg-black" id="About">
       <div className="flex flex-col">
         <h3 className="text-xl font-bold text-white">
           I am a Finance and Information Systems student at the University of Washington.

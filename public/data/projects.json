@@ -6,5 +6,13 @@
         "source": "https://github.com/kimlong0/Discover-PNW",
         "category": "Travel",
         "tools": ["react", "firebase"]
+    },
+    {
+        "name": "Gender Wage Gap",
+        "img": "/gender.png",
+        "link": "https://matthewchung.shinyapps.io/final-project/",
+        "source": "https://www.kaggle.com/datasets/jonavery/incomes-by-career-and-gender",
+        "category": "Travel",
+        "tools": ["r", "shiny"]
     }
 ]
