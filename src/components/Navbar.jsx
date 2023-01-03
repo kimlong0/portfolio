@@ -6,7 +6,7 @@ function Navbar() {
     const Links =[
       {name:"HOME", link:"#"},
       {name:"ABOUT", link:"#About"},
-      {name:"PROJECTS", link:"#"}
+      {name:"PROJECTS", link:"#Projects"}
     ];
     const linkElements = Links.map((link)=>(
         <li key={link.name} className='md:ml-8 md:my-0 my-7'>
