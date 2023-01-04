@@ -10,7 +10,8 @@ module.exports = {
         '128': '32rem'
       },
       borderRadius: {
-        '4xl': '48px'
+        '4xl': '48px',
+        '5xl': '60px'
       },
       colors: {
         'gray-theme': '#F4F2EE',

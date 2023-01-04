@@ -9,7 +9,7 @@ function ProjectCard(props) {
     });
 
     return (
-      <div className="flex flex-col sm:flex-row items-center justify-center w-full h-128 p-6 sm:p-16 my-6 max-w-screen-md bg-gray-900 text-white rounded-4xl">
+      <div className="flex flex-col sm:flex-row items-center justify-center w-full h-128 p-6 sm:p-16 my-6 max-w-screen-md bg-gray-900 text-white rounded-5xl">
         <a href={project.link} target="_blank" className="shrink-0">
           <img src={`/images${project.img}`} className="h-72 w-72 sm:h-96 sm:w-80 object-cover rounded-3xl" alt={project.name + " Cover"}/>
         </a>
