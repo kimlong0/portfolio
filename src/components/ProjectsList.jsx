@@ -32,9 +32,6 @@ function ProjectsList(props) {
   const projectList = projects.map((project) => <ProjectCard key={project.name} project={project}/>)
   return (
     <div>
-      <div className="flex justify-center items-center w-full h-80 bg-[#FDD819] rounded-4xl mt-2">
-        <h2 className="text-2xl pb-8 font-bold">Some of my Projects</h2>
-      </div>
       <div id="Projects" className="py-8 px-9 flex flex-col items-center">
         {projectList}
       </div>
