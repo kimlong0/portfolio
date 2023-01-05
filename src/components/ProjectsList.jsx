@@ -9,7 +9,7 @@ function ProjectCard(props) {
     });
 
     return (
-      <div className="flex flex-col sm:flex-row items-center justify-center w-full h-128 p-6 sm:p-16 my-6 max-w-screen-md bg-gray-900 text-white rounded-5xl">
+      <div className="flex flex-col sm:flex-row items-center justify-center w-full h-128 p-6 sm:p-16 bg-gray-900 text-white rounded-5xl">
         <a href={project.link} target="_blank" className="shrink-0">
           <img src={`/images${project.img}`} className="h-72 w-72 sm:h-96 sm:w-80 object-cover rounded-3xl" alt={project.name + " Cover"}/>
         </a>
@@ -32,7 +32,7 @@ function ProjectsList(props) {
   const projectList = projects.map((project) => <ProjectCard key={project.name} project={project}/>)
   return (
     <div>
-      <div id="Projects" className="py-8 px-9 flex flex-col items-center">
+      <div id="Projects" className="flex flex-col items-center lg:flex-row gap-2 mt-2">
         {projectList}
       </div>
     </div>
