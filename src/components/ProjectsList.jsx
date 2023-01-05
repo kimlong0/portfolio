@@ -33,7 +33,7 @@ function ProjectsList(props) {
   const projectList = projects.map((project) => <ProjectCard key={project.name} project={project}/>)
   return (
     <div>
-      <div id="Projects" className="flex flex-col items-center flex-wrap md:flex-row mt-2">
+      <div id="Projects" className="flex flex-col items-center flex-wrap md:flex-row mt-1">
         {projectList}
       </div>
     </div>
