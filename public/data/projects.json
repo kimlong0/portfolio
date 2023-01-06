@@ -1,18 +1,29 @@
 [
     {
         "name": "Discover PNW",
-        "img": "/discover.png",
+        "img": "/discover_pnw_logo.png",
         "link": "https://discover-pnw.web.app/discover",
         "source": "https://github.com/kimlong0/Discover-PNW",
         "category": "Travel",
-        "tools": ["react", "firebase"]
+        "tools": ["react", "firebase"],
+        "color": "#E7F4E1"
     },
     {
         "name": "Gender Wage Gap",
-        "img": "/gender.png",
+        "img": "",
         "link": "https://matthewchung.shinyapps.io/final-project/",
         "source": "https://www.kaggle.com/datasets/jonavery/incomes-by-career-and-gender",
         "category": "Travel",
-        "tools": ["r", "shiny"]
+        "tools": ["r", "shiny"],
+        "color": "#D86954"
+    },
+    {
+        "name": "Gender Wage Gap",
+        "img": "",
+        "link": "https://matthewchung.shinyapps.io/final-project/",
+        "source": "https://www.kaggle.com/datasets/jonavery/incomes-by-career-and-gender",
+        "category": "Travel",
+        "tools": ["r", "shiny"],
+        "color": "#D86954"
     }
 ]
