@@ -1,4 +1,4 @@
-import { ArrowUpIcon } from "@heroicons/react/24/solid";
+import { ArrowDownRightIcon, CodeBracketIcon } from "@heroicons/react/24/solid";
 
 function ProjectCard(props) {
     const project = props.project;
@@ -16,11 +16,12 @@ function ProjectCard(props) {
       <div className="sm:basis-1/2 p-1 w-full">
         <a href={project.link} target="_blank">
           <div className="relative flex flex-col items-center justify-center h-128 w-full p-6 sm:p-16 text-black rounded-5xl z-[-1]" style={{backgroundColor: project.color}}>
-            <ArrowUpIcon width="25" className="absolute top-0 mt-8"/>
-            {logo}
-            <div className="absolute bottom-0 flex flex-wrap gap-1">
+            <div className="absolute top-0 mt-8 flex flex-wrap gap-1">
               {toolsList}
             </div>
+            <ArrowDownRightIcon width="25" className="absolute bottom-0 right-8 mb-8"/>
+            <CodeBracketIcon width="25" className="absolute bottom-0 mb-8"/>
+            {logo}
           </div>
         </a>
       </div>
