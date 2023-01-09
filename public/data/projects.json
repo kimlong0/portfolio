@@ -13,17 +13,26 @@
         "img": "",
         "link": "https://matthewchung.shinyapps.io/final-project/",
         "source": "https://www.kaggle.com/datasets/jonavery/incomes-by-career-and-gender",
-        "category": "Travel",
+        "category": "Data Analysis",
         "tools": ["r", "shiny"],
         "color": "#D86954"
     },
     {
-        "name": "Gender Wage Gap",
+        "name": "US Incarceration",
         "img": "",
-        "link": "https://matthewchung.shinyapps.io/final-project/",
-        "source": "https://www.kaggle.com/datasets/jonavery/incomes-by-career-and-gender",
-        "category": "Travel",
-        "tools": ["r", "shiny"],
-        "color": "#D86954"
+        "link": "https://info-201a-sp22.github.io/a3-incarceration-kimlong0/",
+        "source": "https://github.com/vera-institute/incarceration-trends",
+        "category": "Data Analysis",
+        "tools": ["r"],
+        "color": "#7F7F7F"
+    },
+    {
+        "name": "What is Defi? 2022",
+        "img": "/defi.jpg",
+        "link": "https://www.canva.com/design/DAE0P3kqCsM/pINw3odjyBR3CgyS783tVQ/view?utm_content=DAE0P3kqCsM&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink",
+        "source": "https://www.canva.com/design/DAE0P3kqCsM/pINw3odjyBR3CgyS783tVQ/view?utm_content=DAE0P3kqCsM&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink",
+        "category": "Education",
+        "tools": [],
+        "color": "#ffffff"
     }
 ]
