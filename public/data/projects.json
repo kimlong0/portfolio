@@ -15,7 +15,7 @@
         "source": "https://www.kaggle.com/datasets/jonavery/incomes-by-career-and-gender",
         "category": "Data Analysis",
         "tools": ["r", "shiny"],
-        "color": "#D86954"
+        "color": "#ffd6a5"
     },
     {
         "name": "US Incarceration",
@@ -24,15 +24,15 @@
         "source": "https://github.com/vera-institute/incarceration-trends",
         "category": "Data Analysis",
         "tools": ["r"],
-        "color": "#7F7F7F"
+        "color": "#cdb4db"
     },
     {
         "name": "What is Defi? 2022",
-        "img": "/defi.jpg",
+        "img": "/defi-trans.png",
         "link": "https://www.canva.com/design/DAE0P3kqCsM/pINw3odjyBR3CgyS783tVQ/view?utm_content=DAE0P3kqCsM&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink",
         "source": "https://www.canva.com/design/DAE0P3kqCsM/pINw3odjyBR3CgyS783tVQ/view?utm_content=DAE0P3kqCsM&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink",
         "category": "Education",
         "tools": [],
-        "color": "#ffffff"
+        "color": "#bee2ff"
     }
 ]
