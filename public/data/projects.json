@@ -10,21 +10,21 @@
     },
     {
         "name": "Gender Wage Gap",
-        "img": "",
+        "img": "/gender-logo.png",
         "link": "https://matthewchung.shinyapps.io/final-project/",
         "source": "https://www.kaggle.com/datasets/jonavery/incomes-by-career-and-gender",
         "category": "Data Analysis",
         "tools": ["r", "shiny"],
-        "color": "#ffd6a5"
+        "color": "#1E1F1E"
     },
     {
         "name": "US Incarceration",
-        "img": "",
+        "img": "/us-incarceration-logo.png",
         "link": "https://info-201a-sp22.github.io/a3-incarceration-kimlong0/",
         "source": "https://github.com/vera-institute/incarceration-trends",
         "category": "Data Analysis",
         "tools": ["r"],
-        "color": "#cdb4db"
+        "color": "#ece5c7"
     },
     {
         "name": "What is Defi? 2022",
