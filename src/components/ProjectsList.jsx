@@ -29,11 +29,11 @@ function ProjectCard(props) {
             <CodeBracketIcon width="25" className="absolute top-10 right-10"/>
           </a>
           <a href={project.link} target="_blank">
-            <div className="rounded-4xl shadow-2xl hover:border-black hover:border-2 duration-300 ease-in">
+            <div className="rounded-4xl shadow-2xl border-transparent border-2 hover:border-black duration-300 ease-in p-5">
               {logo}
             </div>
           </a>
-          <div className="absolute bottom-0 left-10 mb-10 flex flex-wrap gap-1">
+          <div className="absolute top-10 left-10 mb-10 flex flex-col gap-1">
             {toolsList}
           </div>
           <a href={project.link} target="_blank">

@@ -9,7 +9,7 @@ function About() {
                     <h3 className="text-xl md:text-2xl text-center">Finance & Information Systems student at the University of Washington.</h3>
                     <p className="text-3xl font-bold mt-6 text-center">Learning is my passion!</p>
                 </div>
-                <img src="images/Profile-Pic.jpg" className="shrink-0 h-48 w-48 mt-8 rounded-full object-cover"></img>
+                <img src="images/Profile-Pic.jpg" className="shrink-0 h-48 w-48 sm:w-40 sm:h-40 md:h-48 md:w-48 mt-8 rounded-full object-cover"></img>
             </div>
             <div className="flex flex-col h-128 basis-1/2 m-1">
                 <div className="flex flex-col justify-center items-center h-64 w-full bg-[#3DC7E7] mb-1 rounded-5xl text-black">
