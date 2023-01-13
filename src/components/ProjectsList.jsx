@@ -2,10 +2,20 @@ import { ArrowDownRightIcon, CodeBracketIcon } from "@heroicons/react/24/solid";
 
 function ProjectCard(props) {
   const project = props.project;
+  const toolsLinks = new Map([
+    ["firebase", "https://firebase.google.com/"],
+    ["r", "https://www.r-project.org/"],
+    ["react", "https://reactjs.org/"],
+    ["shiny", "https://shiny.rstudio.com/"]
+  ]);
+
+  console.log(toolsLinks.get("r"));
 
   const toolsList = project.tools.map((tool) => {
       return (
-          <img key={tool} width="24" src={`/images/icons/${tool}.svg`} alt={tool}/>
+        <a href={toolsLinks.get(tool)} target="_blank" className="flex">
+          <img key={tool} width="24" src={`/images/icons/${tool}.svg`} alt={tool} className=""/>
+        </a> 
       )
   });
   
