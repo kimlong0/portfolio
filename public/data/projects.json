@@ -12,7 +12,7 @@
         "name": "Gender Wage Gap",
         "img": "/gender-logo.png",
         "link": "https://matthewchung.shinyapps.io/final-project/",
-        "source": "https://www.kaggle.com/datasets/jonavery/incomes-by-career-and-gender",
+        "source": "https://github.com/info-201a-sp22/final-project-kimlong0",
         "category": "Data Analysis",
         "tools": ["r", "shiny"],
         "color": "#1E1F1E"
