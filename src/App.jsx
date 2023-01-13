@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import Navbar from "./components/Navbar"
-import Intro from "./Intro"
+import Intro from "./components/Intro"
 import About from "./components/About"
 import ProjectsList from "./components/ProjectsList"
 
