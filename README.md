@@ -1,4 +1,7 @@
 # Portfolio Repository
-This site is currently being revamped. Check back later to see the published site.
+
+Current deployment: [https://kimlong-portfolio.web.app/](https://kimlong-portfolio.web.app/)
+
+Working code </> :)
 
 Built using React.js and tailwindcss
