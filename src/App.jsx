@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar"
 import Intro from "./components/Intro"
 import About from "./components/About"
 import ProjectsList from "./components/ProjectsList"
+import ConnectWithMe from "./components/ConnectWithMe"
 
 function App() {
   const [projects, setProjects] = useState([]);
@@ -25,6 +26,7 @@ function App() {
       <Intro />
       <About />
       <ProjectsList projects={projects}/>
+      <ConnectWithMe />
     </div>
   )
 }
