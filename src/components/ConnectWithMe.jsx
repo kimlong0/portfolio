@@ -1,8 +1,20 @@
 function ConnectWithMe() {
   return (
     <div className="p-1 w-full hover:scale-95 hover:brightness-110 ease-in duration-200">
-        <div className="flex flex-col items-center justify-center h-128 w-full p-6 sm:p-16 bg-[#3DC7E7] text-black rounded-5xl z-[-1]">
-            <h2 className="text-3xl font-bold">Connect with me</h2>
+        <div className="flex flex-col h-128 w-full p-10 sm:p-16 bg-slate-900 text-[#3DC7E7] rounded-5xl z-[-1]">
+            <h2 className="text-3xl font-semibold">Want to talk with me?</h2>
+            <div className="flex flex-col gap-5 pt-20 pb-10">
+              <a href="mailto:ft.kimlong@gmail.com" className="flex items-center justify-center h-14 w-80 border-2 border-[#3DC7E7] rounded-5xl">
+                <span>ft.kimlong@gmail.com</span>
+              </a>
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" className="flex items-center justify-center h-14 w-80 border-2 border-[#3DC7E7] rounded-5xl">
+                <span>Pigeon Mail</span>
+              </a>
+            </div>
+            <div>
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" className="flex items-center justify-center h-14 w-20 border-2 border-[#3DC7E7] rounded-5xl">
+              </a>
+            </div>
         </div>
 
     </div>

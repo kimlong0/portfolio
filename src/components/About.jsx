@@ -4,7 +4,7 @@ import GithubIcon from "../assets/GithubIcon"
 function About() {
     return (
         <div className="flex flex-col sm:flex-row">
-            <div className="flex flex-col justify-around items-center basis-1/2 h-128 py-20 px-20 m-1 bg-slate-800 rounded-5xl text-white" id="About">
+            <div className="flex flex-col justify-around items-center basis-1/2 h-128 py-20 px-20 m-1 bg-slate-900 rounded-5xl text-white" id="About">
                 <div className="flex flex-col">
                     <h3 className="text-xl md:text-2xl text-center">Finance & Information Systems student at the University of Washington.</h3>
                     <p className="text-3xl font-bold mt-6 text-center">Learning is my passion!</p>
