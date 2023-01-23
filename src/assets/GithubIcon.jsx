@@ -1,6 +1,12 @@
-function Icon() {
+function GithubIcon(props) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 100 100">
+    <svg 
+      xmlns="http://www.w3.org/2000/svg" 
+      width={props.width} 
+      height={props.height}
+      fill={props.fill} 
+      viewBox="0 0 100 100"
+    >
       <path
         fill="#black"
         fillRule="evenodd"
@@ -11,4 +17,4 @@ function Icon() {
   );
 }
 
-export default Icon;
+export default GithubIcon;
