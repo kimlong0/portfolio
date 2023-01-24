@@ -1,5 +1,4 @@
-import { EnvelopeIcon, CommandLineIcon } from "@heroicons/react/24/solid"
-import GithubIcon from "../assets/GithubIcon"
+import { CommandLineIcon, PaperAirplaneIcon } from "@heroicons/react/24/solid"
 
 function About() {
     return (
@@ -12,23 +11,15 @@ function About() {
                 <img src="images/Profile-Pic.jpg" className="shrink-0 h-48 w-48 sm:w-40 sm:h-40 md:h-48 md:w-48 mt-8 rounded-full object-cover"></img>
             </div>
             <div className="flex flex-col h-128 basis-1/2 m-1">
-                <div className="flex flex-col justify-center items-center h-64 w-full bg-[#3DC7E7] mb-1 rounded-5xl text-black">
-                    <h2 className="text-3xl pb-8 font-semibold">Connect with me</h2>
-                    <div className="flex gap-5">
-                        <a href="mailto:ft.kimlong@gmail.com">
-                            <EnvelopeIcon width="25"/>
-                        </a>
-                        <a href="https://www.linkedin.com/in/kimlong-nguyen/" target="_blank">
-                            <img src="/images/icons/linkedin.svg" width="25" fill="white" alt="linkedin"></img>
-                        </a>
-                        <a href="https://github.com/kimlong0" target="_blank">
-                            <GithubIcon />
-                        </a>
+                <a href="#Contact">
+                    <div className="flex flex-col md:flex-row justify-center items-center h-64 w-full bg-[#3DC7E7] mt-1 rounded-5xl text-center hover:scale-95 hover:brightness-110 ease-in duration-200">
+                        <h2 className="text-3xl font-semibold m-4">Contact</h2>
+                        <PaperAirplaneIcon width='40'/>
                     </div>
-                </div>
+                </a>
                 <a href="#Projects">
                     <div id="Projects" className="flex flex-col md:flex-row justify-center items-center h-64 w-full bg-[#FDD819] mt-1 rounded-5xl text-center hover:scale-95 hover:brightness-110 ease-in duration-200">
-                        <h2 className="text-3xl font-semibold m-4">Some of my Projects</h2>
+                        <h2 className="text-3xl font-semibold m-4">Projects</h2>
                         <CommandLineIcon width='40'/>
                     </div>
                 </a>

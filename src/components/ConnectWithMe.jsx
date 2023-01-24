@@ -4,7 +4,7 @@ import TwitterIcon from "../assets/TwitterIcon"
 
 function ConnectWithMe() {
   return (
-    <div className="p-1 w-full hover:brightness-110">
+    <div id="Contact" className="p-1 w-full hover:brightness-110">
         <div className="flex flex-col h-128 w-full p-10 sm:p-16 bg-slate-900 text-[#3DC7E7] rounded-5xl z-[-1]">
             <h2 className="text-4xl font-semibold">Want to talk?</h2>
             <div className="flex flex-col gap-5 pt-20 pb-10">
