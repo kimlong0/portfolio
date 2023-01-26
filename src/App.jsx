@@ -4,6 +4,7 @@ import Intro from "./components/Intro"
 import About from "./components/About"
 import ProjectsList from "./components/ProjectsList"
 import ConnectWithMe from "./components/ConnectWithMe"
+import Footer from "./components/Footer"
 
 function App() {
   const [projects, setProjects] = useState([]);
@@ -27,6 +28,7 @@ function App() {
       <About />
       <ProjectsList projects={projects}/>
       <ConnectWithMe />
+      <Footer />
     </div>
   )
 }
