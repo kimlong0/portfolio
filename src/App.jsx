@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import { motion } from "framer-motion"
 import Navbar from "./components/Navbar"
 import Intro from "./components/Intro"
 import About from "./components/About"
@@ -22,14 +23,24 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <motion.div
+      initial={{
+        opacity: 0
+      }}
+      animate={{
+        opacity: 1
+      }}
+      transition={{
+        duration: 1
+      }}
+    >
       <Navbar />
       <Intro />
       <About />
       <ProjectsList projects={projects}/>
       <ConnectWithMe />
       <Footer />
-    </div>
+    </motion.div>
   )
 }
 
