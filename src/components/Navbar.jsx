@@ -17,7 +17,9 @@ function Navbar() {
     return (
     <div className='w-full fixed top-0 left-0 z-10'>
       <div className='flex items-center justify-between bg-gray-theme py-6 md:px-10 px-8'>
-        <h1 className='font-bold text-2xl cursor-pointer text-gray-800'>KN</h1>
+        <a href="#">
+          <h1 className='font-bold text-2xl cursor-pointer text-gray-800'>KN</h1>
+        </a>
         <button onClick={()=> setOpen(!open)} className='cursor-pointer md:hidden'>
             {open ? <XMarkIcon className='w-8'/> : <Bars3Icon className='w-8'/>}
         </button>
