@@ -3,9 +3,9 @@ import { motion } from "framer-motion"
 function Intro() {
   return (
     <motion.div
-      initial={{ y: -250}} 
-      animate={{ y: 0}}
-      transition={{ duration: 1.5}}
+      initial={{ y: -250 }} 
+      animate={{ y: 0 }}
+      transition={{ duration: 1.5 }}
       className="bg-gray-theme rounded-b-5xl">
       <div className="h-20"></div>
       <div className="flex flex-col md:flex-row justify-center items-center p-4 mb-1">

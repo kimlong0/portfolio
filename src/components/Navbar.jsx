@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { motion } from 'framer-motion';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid'
 
 function Navbar() {
@@ -15,7 +16,11 @@ function Navbar() {
     ))
   
     return (
-    <div className='w-full fixed top-0 left-0 z-10'>
+    <motion.div 
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 2 }}
+      className='w-full fixed top-0 left-0 z-10'>
       <div className='flex items-center justify-between bg-gray-theme py-6 md:px-10 px-8'>
         <a href="#">
           <h1 className='font-bold text-2xl cursor-pointer text-gray-800'>KN</h1>
@@ -27,7 +32,7 @@ function Navbar() {
             {linkElements}
         </ul>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
