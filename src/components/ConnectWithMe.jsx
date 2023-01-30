@@ -16,23 +16,31 @@ function ConnectWithMe() {
                     backgroundColor: "#3DC7E7",
                     color: "rgb(15 23 42)"
                   }}
+                  transition={{ scale: {type: "spring", stiffness: 400 }}}
                   href="mailto:ft.kimlong@gmail.com" className="flex items-center justify-center h-14 w-64 sm:w-96 border-2 border-[#3DC7E7] rounded-5xl">
                   <span>ft.kimlong@gmail.com</span>
                 </motion.a>
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" className="flex items-center justify-center h-14 w-64 sm:w-96 border-2 border-[#3DC7E7] rounded-5xl">
+                <motion.a 
+                  whileHover={{
+                    scale: 1.05,
+                    backgroundColor: "#3DC7E7",
+                    color: "rgb(15 23 42)"
+                  }}
+                  transition={{ scale: {type: "spring", stiffness: 400 }}}
+                  href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" className="flex items-center justify-center h-14 w-64 sm:w-96 border-2 border-[#3DC7E7] rounded-5xl">
                   <span>Pigeon Mail</span>
-                </a>
+                </motion.a>
               </div>
               <div className="flex gap-5">
-                <a href="https://www.linkedin.com/in/kimlong-nguyen/" target="_blank" className="flex items-center justify-center h-14 w-20 border-2 border-[#3DC7E7] rounded-5xl">
+                <motion.a href="https://www.linkedin.com/in/kimlong-nguyen/" target="_blank" className="flex items-center justify-center h-14 w-20 border-2 border-[#3DC7E7] rounded-5xl">
                   <LinkedinIcon width='20' height='20' fill='#3DC7E7'/>
-                </a>
-                <a href="https://github.com/kimlong0" target="_blank" className="flex items-center justify-center h-14 w-20 border-2 border-[#3DC7E7] rounded-5xl">
+                </motion.a>
+                <motion.a href="https://github.com/kimlong0" target="_blank" className="flex items-center justify-center h-14 w-20 border-2 border-[#3DC7E7] rounded-5xl">
                   <GithubIcon width='20' height='20' fill='#3DC7E7'/>
-                </a>
-                <a href="https://twitter.com/0xkimlong" target="_blank" className="flex items-center justify-center h-14 w-20 border-2 border-[#3DC7E7] rounded-5xl">
+                </motion.a>
+                <motion.a href="https://twitter.com/0xkimlong" target="_blank" className="flex items-center justify-center h-14 w-20 border-2 border-[#3DC7E7] rounded-5xl">
                   <TwitterIcon width='20' height='20' fill='#3DC7E7'/>
-                </a>
+                </motion.a>
               </div>
             </div>
         </div>
