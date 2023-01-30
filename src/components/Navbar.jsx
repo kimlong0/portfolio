@@ -19,7 +19,7 @@ function Navbar() {
     <motion.div 
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 2 }}
+      transition={{ delay: 1, duration: 2 }}
       className='w-full fixed top-0 left-0 z-10'>
       <div className='flex items-center justify-between bg-gray-theme py-6 md:px-10 px-8'>
         <a href="#">

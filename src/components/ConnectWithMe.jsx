@@ -1,3 +1,4 @@
+import { motion } from "framer-motion"
 import LinkedinIcon from "../assets/LinkedinIcon"
 import GithubIcon from "../assets/GithubIcon"
 import TwitterIcon from "../assets/TwitterIcon"
@@ -9,9 +10,15 @@ function ConnectWithMe() {
             <h2 className="text-4xl font-semibold pt-8">Want to talk?</h2>
             <div>
               <div className="flex flex-col items-center sm:items-start gap-5 pt-20 pb-10">
-                <a href="mailto:ft.kimlong@gmail.com" className="flex items-center justify-center h-14 w-64 sm:w-96 border-2 border-[#3DC7E7] rounded-5xl">
+                <motion.a 
+                  whileHover={{
+                    scale: 1.05,
+                    backgroundColor: "#3DC7E7",
+                    color: "rgb(15 23 42)"
+                  }}
+                  href="mailto:ft.kimlong@gmail.com" className="flex items-center justify-center h-14 w-64 sm:w-96 border-2 border-[#3DC7E7] rounded-5xl">
                   <span>ft.kimlong@gmail.com</span>
-                </a>
+                </motion.a>
                 <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" className="flex items-center justify-center h-14 w-64 sm:w-96 border-2 border-[#3DC7E7] rounded-5xl">
                   <span>Pigeon Mail</span>
                 </a>
