@@ -1,11 +1,20 @@
-import TwitterIcon from "../assets/TwitterIcon"
+import { motion } from "framer-motion"
 
 function Footer() {
   return (
     <div id="Contact" className="pt-1 px-1 w-full hover:brightness-110">
         <div className="flex flex-col sm:flex-row items-center sm:items-start justify-between h-64 pt-14 pb-6 sm:pt-16 sm:px-16 md:px-32 bg-gray-theme text-[#2ca2b4] rounded-t-5xl z-[-1]">
             <div className="flex flex-col justify-center h-full">
-                <a href="https://drive.google.com/uc?export=download&id=1oQi7V_Dsc9wXjgpXIvDvfAPfUTv6Z4lI" target="_blank" className="flex items-center justify-center h-14 w-48 border-2 border-[#2ca2b4] rounded-5xl">RESUME</a>
+                <motion.a 
+                    whileHover={{
+                    scale: 1.05,
+                    backgroundColor: "#2ca2b4",
+                    color: "#F4F2EE"
+                    }}
+                    transition={{ scale: {type: "spring", stiffness: 400 }}}
+                    href="https://drive.google.com/uc?export=download&id=1oQi7V_Dsc9wXjgpXIvDvfAPfUTv6Z4lI" target="_blank" className="flex items-center justify-center h-14 w-48 border-2 border-[#2ca2b4] rounded-5xl">
+                    <span>RESUME</span>
+                </motion.a>
                 <div className="flex justify-center">
                     <p className="text-center pt-4 pr-2">Made with:</p>
                     <div className="flex justify-center gap-2 pt-3">
