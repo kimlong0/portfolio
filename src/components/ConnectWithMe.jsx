@@ -5,11 +5,17 @@ import TwitterIcon from "../assets/TwitterIcon"
 
 function ConnectWithMe() {
   const buttonVariants = {
+    notHover: {
+      fill: "#3DC7E7"
+    },
     whileHover: {
       scale: 1.05,
       backgroundColor: "#3DC7E7",
       color: "rgb(15 23 42)",
-      transition: {scale: {type: "spring", stiffness: 400 }}
+      transition: {
+        scale: {type: "spring", stiffness: 400 }
+      },
+      fill: "rgb(15 23 42)"
     },
   }
 
@@ -33,14 +39,26 @@ function ConnectWithMe() {
                 </motion.a>
               </div>
               <div className="flex gap-5">
-                <motion.a href="https://www.linkedin.com/in/kimlong-nguyen/" target="_blank" className="flex items-center justify-center h-14 w-20 border-2 border-[#3DC7E7] rounded-5xl">
-                  <LinkedinIcon width='20' height='20' fill='#3DC7E7'/>
+                <motion.a 
+                  initial="notHover"
+                  whileHover="whileHover"
+                  variants={buttonVariants}
+                  href="https://www.linkedin.com/in/kimlong-nguyen/" target="_blank" className="flex items-center justify-center h-14 w-20 border-2 border-[#3DC7E7] rounded-5xl">
+                  <LinkedinIcon width='20' height='20'/>
                 </motion.a>
-                <motion.a href="https://github.com/kimlong0" target="_blank" className="flex items-center justify-center h-14 w-20 border-2 border-[#3DC7E7] rounded-5xl">
-                  <GithubIcon width='20' height='20' fill='#3DC7E7'/>
+                <motion.a
+                  initial="notHover"
+                  whileHover="whileHover"
+                  variants={buttonVariants}
+                  href="https://github.com/kimlong0" target="_blank" className="flex items-center justify-center h-14 w-20 border-2 border-[#3DC7E7] rounded-5xl">
+                  <GithubIcon width='20' height='20'/>
                 </motion.a>
-                <motion.a href="https://twitter.com/0xkimlong" target="_blank" className="flex items-center justify-center h-14 w-20 border-2 border-[#3DC7E7] rounded-5xl">
-                  <TwitterIcon width='20' height='20' fill='#3DC7E7'/>
+                <motion.a
+                  initial="notHover"
+                  whileHover="whileHover"
+                  variants={buttonVariants}
+                  href="https://twitter.com/0xkimlong" target="_blank" className="flex items-center justify-center h-14 w-20 border-2 border-[#3DC7E7] rounded-5xl">
+                  <TwitterIcon width='20' height='20'/>
                 </motion.a>
               </div>
             </div>

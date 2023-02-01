@@ -4,7 +4,6 @@ function TwitterIcon(props) {
         xmlns="http://www.w3.org/2000/svg"
         width={props.width}
         height={props.height}
-        fill={props.fill}
         version="1.1"
         viewBox="-271 296.6 256.4 208.4"
         xmlSpace="preserve"

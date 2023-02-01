@@ -4,7 +4,6 @@ function GithubIcon(props) {
       xmlns="http://www.w3.org/2000/svg" 
       width={props.width} 
       height={props.height}
-      fill={props.fill} 
       viewBox="0 0 100 100"
     >
       <path
