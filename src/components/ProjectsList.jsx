@@ -10,12 +10,10 @@ function ProjectCard(props) {
     ["shiny", "https://shiny.rstudio.com/"]
   ]);
 
-  console.log(toolsLinks.get("r"));
-
   const toolsList = project.tools.map((tool) => {
       return (
-        <a href={toolsLinks.get(tool)} target="_blank" className="flex">
-          <img key={tool} width="24" src={`/images/icons/${tool}.svg`} alt={tool} className=""/>
+        <a key={tool} href={toolsLinks.get(tool)} target="_blank" className="flex">
+          <img width="24" src={`/images/icons/${tool}.svg`} alt={tool} className=""/>
         </a> 
       )
   });
@@ -51,6 +49,7 @@ function ProjectCard(props) {
   
 function ProjectsList(props) {
   const projects = props.projects;
+  console.log(projects);
   const projectList = projects.map((project) => <ProjectCard key={project.name} project={project}/>)
   return (
     <div>
