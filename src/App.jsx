@@ -19,6 +19,9 @@ function App() {
     })
     .then((data) => {
       setProjects(data);
+
+      // On page refresh/data-load, scroll to the top of the page. 
+      window.scrollTo(0, 0);
     })
   }, []);
 
