@@ -1,7 +1,10 @@
-import { motion } from "framer-motion"
+import { motion, useScroll, useTransform } from "framer-motion"
 
-function Intro() {
-
+function Intro(props) {
+  let { scrollYProgress } = useScroll();
+  let x = useTransform(scrollYProgress, [0, 0.5], [1000,  -100]);
+  // const transformValue = props.transformValue;
+  // console.log(transformValue);
 
   return (
     <div>
@@ -19,8 +22,8 @@ function Intro() {
         </div>
       </motion.div>
 
-      <div className="flex items-center h-screen bg-lime-300 rounded-5xl">
-        <h1 className="text-4xl md:text-6xl font-bold">Let's Explore With Me</h1>
+      <div className="flex items-center h-screen bg-orange-400 rounded-5xl">
+        <motion.h1 className="text-4xl md:text-6xl font-bold" style={{ x }} >Let's Explore With Me</motion.h1>
       </div>
     </div>
   )

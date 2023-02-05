@@ -49,7 +49,6 @@ function ProjectCard(props) {
   
 function ProjectsList(props) {
   const projects = props.projects;
-  console.log(projects);
   const projectList = projects.map((project) => <ProjectCard key={project.name} project={project}/>)
   return (
     <div>

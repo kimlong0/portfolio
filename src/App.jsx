@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { motion } from "framer-motion"
+import { motion, useScroll, useTransform } from "framer-motion"
 import Navbar from "./components/Navbar"
 import Intro from "./components/Intro"
 import About from "./components/About"
@@ -9,6 +9,9 @@ import Footer from "./components/Footer"
 
 function App() {
   const [projects, setProjects] = useState([]);
+
+  let { scrollYProgress } = useScroll();
+  let x = useTransform(scrollYProgress, [0, 0.5], [100,  -100]);
 
   useEffect(() => {
     fetch('/data/projects.json').catch((error) => {
