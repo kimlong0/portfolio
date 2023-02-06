@@ -10,12 +10,10 @@ function ProjectCard(props) {
     ["shiny", "https://shiny.rstudio.com/"]
   ]);
 
-  console.log(toolsLinks.get("r"));
-
   const toolsList = project.tools.map((tool) => {
       return (
-        <a href={toolsLinks.get(tool)} target="_blank" className="flex">
-          <img key={tool} width="24" src={`/images/icons/${tool}.svg`} alt={tool} className=""/>
+        <a key={tool} href={toolsLinks.get(tool)} target="_blank" className="flex">
+          <img width="24" src={`/images/icons/${tool}.svg`} alt={tool} className=""/>
         </a> 
       )
   });

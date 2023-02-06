@@ -20,7 +20,7 @@ function Navbar() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 1, duration: 2 }}
-      className='w-full fixed top-0 left-0 z-10'>
+      className='w-full fixed top-0 left-0 z-10 bg-gray-theme'>
       <div className='flex items-center justify-between bg-gray-theme py-6 md:px-10 px-8'>
         <a href="#">
           <h1 className='font-bold text-2xl cursor-pointer text-gray-800'>KN</h1>
