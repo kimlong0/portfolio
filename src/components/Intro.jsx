@@ -1,12 +1,12 @@
 import { motion, useScroll, useTransform } from "framer-motion"
 
 function Intro() {
-  let { scrollYProgress } = useScroll();
-  let x = useTransform(scrollYProgress, [0.15, 0.6], ["-100%",  "700%"]);
+  const { scrollYProgress } = useScroll();
+  const x = useTransform(scrollYProgress, [0.15, 0.6], ["-100%",  "700%"]);
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "300%"]);
   const opacity = useTransform(scrollYProgress, [0, 0.35, 0.40], [ 1, 1, 0]);
-  // const transformValue = props.transformValue;
-  // console.log(transformValue);
+  const rotate = useTransform(scrollYProgress, [0.15, 0.6], [0, 540]);
+  // const backgroundColor = useTransform(scrollYProgress, [0.15, 0.25], ["#000", "#fff"])
 
   return (
     <div>
@@ -25,9 +25,17 @@ function Intro() {
         </div>
       </motion.div>
 
-      <div className="flex items-center h-screen bg-black rounded-5xl border-2 border-[#2ca2b4] truncate">
+      <motion.div 
+        className="relative flex items-center h-screen bg-black rounded-5xl border-2 border-[#2ca2b4] truncate"
+        style={{ }}>
+        <motion.div
+          className="absolute bottom-20 right-20 w-24 h-24 bg-lime-300 rounded-3xl"
+          style={{ rotate }}
+        >
+
+        </motion.div>
         <motion.h1 className="text-4xl md:text-6xl font-bold text-[#2ca2b4]" style={{ x }}>Explore With Me</motion.h1>
-      </div>
+      </motion.div>
     </div>
   )
 }
