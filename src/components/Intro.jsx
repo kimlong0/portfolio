@@ -1,4 +1,4 @@
-import { motion, useScroll, useTransform } from "framer-motion"
+import { motion, useScroll, useTransform } from "framer-motion";
 
 function Intro() {
   const { scrollYProgress } = useScroll();
@@ -8,9 +8,18 @@ function Intro() {
   const opacity = useTransform(scrollYProgress, [0, 0.35, 0.40], [ 1, 1, 0]);
 
   // Bottom section animation
-  const x = useTransform(scrollYProgress, [0.15, 0.6], ["-100%",  "700%"]);
+  const x = useTransform(scrollYProgress, [0.05, 0.8], ["-100%",  "700%"]);
   const rotate = useTransform(scrollYProgress, [0.15, 0.6], [0, 540]);
-  // const backgroundColor = useTransform(scrollYProgress, [0.15, 0.25], ["#000", "#fff"])
+  const backgroundColor = useTransform(scrollYProgress, [0.15, 0.25], ["#000", "#fff"])
+
+
+  const iconAnimate = {
+    offScreen: { x: -150 },
+    onScreen: { 
+      x: 200,
+      y: 100,
+      transition: {type: "spring"}}
+  }
 
   return (
     <div>
@@ -30,11 +39,16 @@ function Intro() {
 
       <motion.div 
         className="relative flex items-center h-screen bg-black rounded-5xl border-2 border-[#2ca2b4] truncate"
-        style={{ }}>
+        style={{ backgroundColor }}>
         <motion.div
           className="absolute bottom-20 right-20 w-24 h-24 bg-lime-300 rounded-3xl"
           style={{ rotate }}/>
         <motion.h1 className="text-4xl md:text-6xl font-bold text-[#2ca2b4]" style={{ x }}>Explore With Me</motion.h1>
+        <motion.img
+          initial={"offScreen"}
+          animate={"onScreen"}
+          variants={iconAnimate}
+          src="images/icons/react.svg" width="24" alt="react" className="absolute top-32 left-0" />
       </motion.div>
     </div>
   )
