@@ -1,16 +1,41 @@
 import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef, useState, useLayoutEffect} from "react";
 
 function Intro() {
+  const sectionRef = useRef();
+  // console.log('height', sectionRef.current ? sectionRef.current.getBoundingClientRect() : 0);
+  
   const { scrollYProgress } = useScroll();
+  console.log(scrollYProgress)
+  // Stores the start and end scrolling position for our container
+  const [scrollPercentageStart, setScrollPercentageStart] = useState(null);
+  const [scrollPercentageEnd, setScrollPercentageEnd] = useState(null);
+  // console.log(scrollPercentageStart)
+  // console.log(scrollPercentageEnd)
 
+  useLayoutEffect(() => {
+    // Get the distance from the start of the page to the element start
+    const rect = sectionRef.current.getBoundingClientRect();
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
+    const offsetStart = rect.top + scrollTop;
+    const offsetEnd = (rect.top + rect.height);
+    
+    const elementScrollStart = offsetStart / document.body.clientHeight;
+    const elementScrollEnd = offsetEnd / document.body.clientHeight;
+    setScrollPercentageStart(elementScrollStart);
+    setScrollPercentageEnd(elementScrollEnd);
+  });
+
+  
   // Top section animation
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "300%"]);
   const opacity = useTransform(scrollYProgress, [0, 0.35, 0.40], [ 1, 1, 0]);
 
   // Bottom section animation
-  const x = useTransform(scrollYProgress, [0.05, 0.8], ["-100%",  "700%"]);
+  const x = useTransform(scrollYProgress, [0.05, 0.25], ["0vw", "20vw"]);
   const rotate = useTransform(scrollYProgress, [0.15, 0.6], [0, 540]);
-  const backgroundColor = useTransform(scrollYProgress, [0.15, 0.25], ["#000", "#fff"])
+  const backgroundColor = useTransform(scrollYProgress, [0.15, 0.2], ["#000", "#001"])
 
 
   const iconAnimate = {
@@ -39,7 +64,8 @@ function Intro() {
 
       <motion.div 
         className="relative flex items-center h-screen bg-black rounded-5xl border-2 border-[#2ca2b4] truncate"
-        style={{ backgroundColor }}>
+        style={{ }}
+        ref={sectionRef}>
         <motion.div
           className="absolute bottom-20 right-20 w-24 h-24 bg-lime-300 rounded-3xl"
           style={{ rotate }}/>
