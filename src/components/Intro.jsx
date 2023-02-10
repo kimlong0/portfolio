@@ -70,11 +70,11 @@ function Intro() {
           className="absolute bottom-20 right-20 w-24 h-24 bg-lime-300 rounded-3xl"
           style={{ rotate }}/>
         <motion.h1 className="text-4xl md:text-6xl font-bold text-[#2ca2b4]" style={{ x }}>Explore With Me</motion.h1>
-        <motion.img
+        {/* <motion.img
           initial={"offScreen"}
           animate={"onScreen"}
           variants={iconAnimate}
-          src="images/icons/react.svg" width="24" alt="react" className="absolute top-32 left-0" />
+          src="images/icons/react.svg" width="24" alt="react" className="absolute top-32 left-0" /> */}
       </motion.div>
     </div>
   )
