@@ -1,5 +1,4 @@
 import { CommandLineIcon, PaperAirplaneIcon } from "@heroicons/react/24/solid";
-import { motion } from "framer-motion";
 
 function About() {
     return (
@@ -13,22 +12,16 @@ function About() {
             </div>
             <div className="flex flex-col h-128 basis-1/2 m-1 gap-1">
                 <a href="#Contact">
-                    <motion.div 
-                        whileHover={{scale: 0.97}}
-                        transition={{type: "spring", stiffness: 200}}
-                        className="flex flex-col md:flex-row justify-center items-center h-64 w-full bg-[#3DC7E7] rounded-5xl text-center">
+                    <div className="flex flex-col md:flex-row justify-center items-center h-64 w-full bg-[#3DC7E7] rounded-5xl text-center hover:scale-95 hover:brightness-105 duration-500">
                         <h2 className="text-3xl font-semibold m-4">Contact</h2>
                         <PaperAirplaneIcon width='40'/>
-                    </motion.div>
+                    </div>
                 </a>
                 <a href="#Projects">
-                    <motion.div 
-                        whileHover={{scale: 0.97}}
-                        transition={{type: "spring", stiffness: 200}}
-                        id="Projects" className="flex flex-col md:flex-row justify-center items-center h-64 w-full bg-[#FDD819] rounded-5xl text-center">
+                    <div id="Projects" className="flex flex-col md:flex-row justify-center items-center h-64 w-full bg-[#FDD819] rounded-5xl text-center hover:scale-95 hover:brightness-105 duration-500">
                         <h2 className="text-3xl font-semibold m-4">Projects</h2>
                         <CommandLineIcon width='40'/>
-                    </motion.div>
+                    </div>
                 </a>
             </div>
         </div>

@@ -1,5 +1,4 @@
 import { ArrowDownRightIcon, CodeBracketIcon } from "@heroicons/react/24/solid";
-import { motion } from "framer-motion";
 
 function ProjectCard(props) {
   const project = props.project;
@@ -23,10 +22,7 @@ function ProjectCard(props) {
   
   return (
     <div className="sm:basis-1/2 p-1 w-full">
-        <motion.div 
-          whileHover={{scale: 0.97}}
-          transition={{type: "spring", stiffness: 200}}
-          className="relative flex flex-col items-center justify-center h-96 w-full p-6 sm:p-16 text-black rounded-5xl" style={{backgroundColor: project.color}}>
+        <div className="relative flex flex-col items-center justify-center h-96 w-full p-6 sm:p-16 text-black rounded-5xl hover:scale-95 hover:brightness-105 duration-500" style={{backgroundColor: project.color}}>
           <a href={project.source} target="_blank">
             <CodeBracketIcon width="25" className="absolute top-10 right-10"/>
           </a>
@@ -41,7 +37,7 @@ function ProjectCard(props) {
           <a href={project.link} target="_blank">
             <ArrowDownRightIcon width="25" className="absolute bottom-0 right-10 mb-10"/>
           </a>
-        </motion.div>
+        </div>
     </div>
 
   )
