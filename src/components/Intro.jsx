@@ -6,7 +6,7 @@ function Intro() {
   // console.log('height', sectionRef.current ? sectionRef.current.getBoundingClientRect() : 0);
   
   const { scrollYProgress } = useScroll();
-  console.log(scrollYProgress)
+  // console.log(scrollYProgress)
   // Stores the start and end scrolling position for our container
   const [scrollPercentageStart, setScrollPercentageStart] = useState(null);
   const [scrollPercentageEnd, setScrollPercentageEnd] = useState(null);
@@ -35,8 +35,6 @@ function Intro() {
   // Bottom section animation
   const x = useTransform(scrollYProgress, [0.05, 0.25], ["0vw", "20vw"]);
   const rotate = useTransform(scrollYProgress, [0.15, 0.6], [0, 540]);
-  const backgroundColor = useTransform(scrollYProgress, [0.15, 0.2], ["#000", "#001"])
-
 
   const iconAnimate = {
     offScreen: { x: -150 },
@@ -62,20 +60,15 @@ function Intro() {
         </div>
       </motion.div>
 
-      <motion.div 
+      <div 
         className="relative flex items-center h-screen bg-black rounded-5xl border-2 border-[#2ca2b4] truncate"
-        style={{ }}
         ref={sectionRef}>
         <motion.div
           className="absolute bottom-20 right-20 w-24 h-24 bg-lime-300 rounded-3xl"
           style={{ rotate }}/>
         <motion.h1 className="text-4xl md:text-6xl font-bold text-[#2ca2b4]" style={{ x }}>Explore With Me</motion.h1>
-        {/* <motion.img
-          initial={"offScreen"}
-          animate={"onScreen"}
-          variants={iconAnimate}
-          src="images/icons/react.svg" width="24" alt="react" className="absolute top-32 left-0" /> */}
-      </motion.div>
+        {/* <img src="images/icons/react.svg" width="24" alt="react" className="absolute top-32 left-0" /> */}
+      </div>
     </div>
   )
 }

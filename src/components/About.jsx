@@ -2,7 +2,7 @@ import { CommandLineIcon, PaperAirplaneIcon } from "@heroicons/react/24/solid";
 
 function About() {
     return (
-        <div className="flex flex-col sm:flex-row">
+        <div id="About" className="flex flex-col sm:flex-row">
             <div className="flex flex-col xl:flex-row justify-around items-center basis-1/2 h-128 py-20 px-20 m-1 bg-slate-900 rounded-5xl text-white" id="About">
                 <div className="flex flex-col xl:gap-8 lg:pr-6">
                     <h3 className="text-xl md:text-2xl text-center xl:text-left max-w-lg">Finance & Information Systems student at the University of Washington.</h3>

@@ -2,7 +2,7 @@ import { motion } from "framer-motion"
 
 function Footer() {
   return (
-    <div id="Contact" className="pt-1 px-1 w-full hover:brightness-110">
+    <div className="pt-1 px-1 w-full hover:brightness-110">
         <div className="flex flex-col sm:flex-row items-center sm:items-start justify-between h-64 pt-14 pb-6 sm:pt-16 sm:px-16 md:px-32 bg-gray-theme text-[#2ca2b4] rounded-t-5xl z-[-1]">
             <div className="flex flex-col justify-center h-full">
                 <motion.a 
