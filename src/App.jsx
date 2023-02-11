@@ -13,6 +13,32 @@ import Loading from "./assets/Loading"
 function App() {
   const [projects, setProjects] = useState([]);
   const [isQuerying, setIsQuerying] = useState(false);
+  const [mousePosition, setMousePosition] = useState({
+    x: 0,
+    y: 0
+  });
+
+  const cursorVariants = {
+    default: {
+      x: mousePosition.x - 16,
+      y: mousePosition.y - 16
+    }
+  }
+
+  useEffect(() => {
+    const mouseMove = (event) => {
+      setMousePosition({
+        x: event.clientX,
+        y: event.clientY
+      })
+    }
+
+    window.addEventListener("mousemove", mouseMove);
+
+    return () => {
+      window.removeEventListener("mousemove", mouseMove);
+    }
+  }, []);
 
   useEffect(() => {
     // Set loading state
@@ -51,6 +77,10 @@ function App() {
           <Footer />
         </main>
       </motion.div>
+      <motion.div 
+        animate={"default"}
+        variants={cursorVariants}
+        className="bg-gray-900 w-8 h-8 rounded-full fixed top-0 left-0 pointer-events-none opacity-60"/>
     </div>
   )
 }
