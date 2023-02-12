@@ -30,7 +30,7 @@ function Intro() {
   
   // Top section animation
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "300%"]);
-  const opacity = useTransform(scrollYProgress, [0, 0.35, 0.40], [ 1, 1, 0]);
+  const opacity = useTransform(scrollYProgress, [0, 0.35, 0.355], [ 1, 1, 0]);
 
   // Bottom section animation
   const x = useTransform(scrollYProgress, [0.05, 0.25], ["0vw", "20vw"]);
@@ -67,7 +67,7 @@ function Intro() {
           className="absolute bottom-20 right-20 w-24 h-24 bg-lime-300 rounded-3xl"
           style={{ rotate }}/>
         <motion.h1 className="text-4xl md:text-6xl font-bold text-[#2ca2b4]" style={{ x }}>Explore With Me</motion.h1>
-        {/* <img src="images/icons/react.svg" width="24" alt="react" className="absolute top-32 left-0" /> */}
+        {/* <motion.img src="images/icons/react.svg" width="24" alt="react" className="absolute top-64 left-56" /> */}
       </div>
     </div>
   )

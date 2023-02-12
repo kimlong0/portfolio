@@ -13,7 +13,6 @@ import Loading from "./assets/Loading"
 function App() {
   const [projects, setProjects] = useState([]);
   const [isQuerying, setIsQuerying] = useState(false);
-  const [cursorVariant, setCursorVariant] =useState("default");
   const [mousePosition, setMousePosition] = useState({
     x: 0,
     y: 0
@@ -63,7 +62,7 @@ function App() {
   }, []);
 
   return (
-    <div>
+    <div className="app">
       {isQuerying && <LoadingIconWrapper />}
       <motion.div
         initial={{ opacity: 0 }}
@@ -82,7 +81,7 @@ function App() {
       <motion.div 
         animate={"default"}
         variants={cursorVariants}
-        className="bg-[#2ca2b4] w-8 h-8 rounded-full fixed top-0 left-0 pointer-events-none opacity-60 hidden sm:block"/>
+        className="trailing-cursor bg-[#2ca2b4] w-8 h-8 rounded-full fixed top-0 left-0 pointer-events-none hidden opacity-0 sm:block"/>
     </div>
   )
 }
