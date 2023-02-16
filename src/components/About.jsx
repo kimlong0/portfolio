@@ -12,13 +12,13 @@ function About() {
             </div>
             <div className="flex flex-col h-128 basis-1/2 m-1 gap-1">
                 <a href="#Contact">
-                    <div className="flex flex-col md:flex-row justify-center items-center h-64 w-full bg-gradient-to-r from-[#5257e5] to-[#6fe3e1] rounded-5xl text-center hover:scale-95 hover:brightness-105 duration-500">
+                    <div className="flex flex-col md:flex-row justify-center items-center h-64 w-full bg-gradient-to-r from-[#3DC7E7] to-[#6fe3e1] rounded-5xl text-center hover:scale-95 hover:brightness-105 duration-500">
                         <h2 className="text-3xl font-semibold m-4">Contact</h2>
                         <PaperAirplaneIcon width='40'/>
                     </div>
                 </a>
                 <a href="#Projects">
-                    <div id="Projects" className="flex flex-col md:flex-row justify-center items-center h-64 w-full bg-gradient-to-r from-[#ff930f] to-[#fff95b] rounded-5xl text-center hover:scale-95 hover:brightness-105 duration-500">
+                    <div id="Projects" className="flex flex-col md:flex-row justify-center items-center h-64 w-full bg-gradient-to-r from-[#FFA639] to-[#fff95b] rounded-5xl text-center hover:scale-95 hover:brightness-105 duration-500">
                         <h2 className="text-3xl font-semibold m-4">Projects</h2>
                         <CommandLineIcon width='40'/>
                     </div>
