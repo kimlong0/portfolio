@@ -34,7 +34,7 @@ function Intro() {
         className="relative flex items-center h-screen bg-black rounded-5xl border-2 border-[#2ca2b4] truncate"
         ref={sectionRef}>
         <motion.div
-          className="absolute bottom-20 right-20 w-24 h-24 bg-lime-300 rounded-3xl"
+          className="absolute bottom-20 right-20 w-24 h-24 bg-gradient-to-r from-[#b9dcf2] to-[#f6cfbe] rounded-3xl"
           style={{ rotate }}/>
         <motion.h1 className="text-4xl md:text-6xl font-bold text-[#2ca2b4]" style={{ x }}>Explore With Me</motion.h1>
         {/* <motion.img src="images/icons/react.svg" width="24" alt="react" className="absolute top-64 left-56" /> */}
