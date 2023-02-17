@@ -11,7 +11,7 @@ function Intro() {
   const opacity = useTransform(scrollYProgress, [0, 0.35, 0.355], [ 1, 1, 0]);
 
   // Bottom section animation
-  const x = useTransform(scrollYProgress, [0.05, 0.25], ["0vw", "20vw"]);
+  const x = useTransform(scrollYProgress, [0.05, 0.25], ["0vw", "15vw"]);
   const rotate = useTransform(scrollYProgress, [0.15, 0.6], [0, 540]);
 
   return (
@@ -36,7 +36,7 @@ function Intro() {
         <motion.div
           className="absolute bottom-20 right-20 w-24 h-24 bg-gradient-to-r from-[#b9dcf2] to-[#f6cfbe] rounded-3xl"
           style={{ rotate }}/>
-        <motion.h1 className="text-4xl md:text-6xl font-bold text-[#2ca2b4]" style={{ x }}>Explore With Me</motion.h1>
+        <motion.h1 className="text-4xl md:text-6xl font-bold text-[#2ca2b4]" style={{ x }}>I'm Kimlong Nguyen</motion.h1>
         {/* <motion.img src="images/icons/react.svg" width="24" alt="react" className="absolute top-64 left-56" /> */}
       </div>
     </div>
