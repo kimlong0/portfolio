@@ -22,7 +22,7 @@ function Intro() {
         transition={{ease: "anticipate", duration: 2 }}
         className="bg-gray-theme rounded-b-5xl relative z-[-1] pt-20"
         style={{ y, opacity }}>
-        <div className="flex flex-col sm:flex-row h-[calc(100vh_-_15rem)] justify-center items-center p-4 mb-1">
+        <div className="flex flex-col sm:flex-row h-[calc(100vh_-_15rem)] justify-center items-center p-4 mb-1 overflow-hidden">
             <h1 className="text-4xl sm:text-6xl font-bold text-center py-8 px-9 min-w-max bg-gradient-to-r from-[#2ca2b4] via-[#7f87ff] to-[#ec3d43] bg-clip-text text-transparent">Hello World</h1>
             <div className="max-w-xl overflow-hidden rounded-3xl">
                 <img src="images/paint-explosion.png"></img>
