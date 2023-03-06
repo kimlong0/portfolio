@@ -19,7 +19,7 @@ function Intro() {
       <motion.div
         initial={{ y: -250 }} 
         animate={{ y: 0 }}
-        transition={{ duration: 1.5 }}
+        transition={{ease: "anticipate", duration: 2 }}
         className="bg-gray-theme rounded-b-5xl relative z-[-1] pt-20"
         style={{ y, opacity }}>
         <div className="flex flex-col sm:flex-row h-[calc(100vh_-_15rem)] justify-center items-center p-4 mb-1">
